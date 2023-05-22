@@ -3,6 +3,17 @@ let currentItem = 1
 const item = document.querySelectorAll('.item');
 const maxItem = item.length
 
+const mudartheme = document.querySelector('#theme-toggle');
+const theme = document.querySelector('.fundo');
+
+// getElementById()
+mudartheme.addEventListener('click', () => {
+  theme.classList.toggle('dark-mode');
+  mudartheme.classList.toggle('dark-mode');
+});
+
+
+
 // // Passar imagem do carrocel sozinho
 
 // setInterval(() => {
@@ -23,10 +34,16 @@ const maxItem = item.length
 //     item[currentItem].classList.add('current-item');
 // }, 2000);
 
+// window.addEventListener('beforeunload', function (event) {
+//     event.preventDefault();
+//     event.returnValue = '';
+//     alert('Tem certeza que quer nos deixar? sentiremos sua falta.');
+//   });
+
+
+
 
 // Passar Imagem no CLick
-
-
 
 control.forEach(control => {
     control.addEventListener('click', () => {
@@ -102,18 +119,59 @@ window.addEventListener('scroll', () => {
         box.style.width = 25;
         box.style.height = 25;
     })
-    boxes[3].style.fill = 'white';
-    boxes[3].style.width = 20;
-    boxes[3].style.height = 20;
+    boxes[2].style.fill = 'white';
+    boxes[2].style.width = 20;
+    boxes[2].style.height = 20;
   } else if (scrollTop >= 1846) {
     boxes.forEach((box) => {
         box.style.fill = 'black';
         box.style.width = 25;
         box.style.height = 25;
     })
-    boxes[4].style.fill = 'white';
-    boxes[4].style.width = 20;
-    boxes[4].style.height = 20;
+    boxes[3].style.fill = 'white';
+    boxes[3].style.width = 20;
+    boxes[3].style.height = 20;
   }
-  console.log(scrollTop);
+});
+
+
+const content = document.querySelectorAll('.content')
+const botao = document.querySelector('.envio')
+
+
+const objeto = {}
+
+
+
+// function hadleSubmit(event) {
+// //     event.preventDefault();
+// //     const destinatario = 'alexamenic@gmail.com';
+// //     const assunto = objeto.nome;
+// //     const corpo = 'Email:' + objeto.email + '\n' + 'Telefone:' + objeto.numero + '\n' + 'Mensagem:' + objeto.mensagem;
+  
+// //     const link = `mailto:${destinatario}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+
+// //     window.location.href = link;
+// // }
+
+// event.preventDefault();
+
+// console.log(event)
+
+console.log(botao)
+
+botao.addEventListener('click', () => {
+    objeto.nome = content[0].value
+    objeto.email = content[1].value
+    objeto.numero = content[2].value
+    objeto.mensagem = content[3].value
+    
+    const destinatario = 'alexamenic@gmail.com';
+    const assunto = objeto.nome;
+    const corpo = 'Email: ' + objeto.email + '\n' + 'Telefone: ' + objeto.numero + '\n' + 'Mensagem:' + objeto.mensagem;
+  
+    const link = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+    console.log(botao.href);
+    botao.href = link
+    console.log(botao.href);
 });
