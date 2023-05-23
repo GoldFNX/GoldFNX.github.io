@@ -1,37 +1,40 @@
 * {
-    margin:0px;
-    padding: 0px;
+    margin:0%;
+    padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
+}
+
+@media screen and (max-width: 3000px) {
+
+html {
+    font-size: 16px;
 }
 
 body {
     background-image: url("./Asset/macigy_ilustration_picture_for_article_about_chatgpt_and_UI_7100ce80-86ca-446a-9080-58a8c94ae8f3.png");
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100vw;
-    --laranja: #700aac;
-    --branco: #1a1a1a;
+    --roxo: #700aac;
+    --preto: #1a1a1a;
 }
 
-.botao2 {
-    margin-left: 100px;
-    margin-top: 20px;
+section {
+    max-width: 200vh;
+    max-height: 100vh;
 }
-
-
 
 .fundo {
     color: #000;
     background-color: #fff;
-    margin: 0px 100px;
+    margin: 0% 7.5%;
 }
 
 .fundo.dark-mode {
     color: #dadada;
     background-color: #222; 
-    margin: 0px 100px;
+    margin: 0% 7.5%;
 }
 
 main {
@@ -43,63 +46,65 @@ main {
 .texto {
     width: 50%;
     height: auto;
-    /* background-color: var(--branco); */
+    /* background-color: var(--preto); */
   }  
   
 .texto-grande h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-    font-size: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 17%;
+    font-size: 3.7em;
     display: flex;
     font-family: 'Poppins', sans-serif;
     /* color: #dadada; */
 }
 
 .texto-grande h2 {
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 100px;
-    font-size: 40px;
+    margin-top: 18%;
+    margin-bottom: 0%;
+    margin-left: 17%;
+    font-size: 2.5em;
     font-family: 'Poppins', sans-serif;
     /* color: #dadada; */
 }
 
 .texto-grande h5 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    margin-left: 100px;
-    background-color: var(--laranja);
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 0.83em;
+    margin-top: 0%;
+    margin-bottom: 2.6%;
+    margin-left: 17%;
+    background-color: var(--roxo);
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: fit-content;
     font-family: 'Poppins', sans-serif;
 }
 
 .texto-grande p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    font-size: 60px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 3%;
+    font-size: 1.04em;
     font-weight: bold;
-    color: var(--laranja);   
+    color: var(--roxo);   
     font-family: 'Poppins', sans-serif;
 }
 .texto-menores p {
-    padding-left: 100px;
-    padding-right: 40px;
+    font-size: 1em;
+    margin-left: 17%;
+    margin-right: 7.2%;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     }
 
 .butao {
-    margin: 10px;
-    padding: 10px 20px;
-    margin-left: 90px;
-    background-color: var(--laranja);
-    border-radius: 30px;
+    margin: 2%;
+    padding: 2% 4%;
+    margin-left: 17%;
+    background-color: var(--roxo);
+    border-radius: 2.06em;
     font-weight: Bold;
     /* color: #dadada; */
     border: none;
@@ -111,86 +116,94 @@ main {
     width: 50%;
     background-image: url("./Asset/WhatsApp\ Image\ 2023-02-14\ at\ 17.04.53.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: right;
-    border-radius: 50%;
 }
+
+.seta {
+    position: fixed;
+    margin-right: -8.6%;
+}
+
 
 .menu {
-    background-color: var(--laranja);
+    display: none;
+    background-color: var(--roxo);
     height: 50vh;
-    margin-right: -118px;
+    margin-right: -4.2%;
     justify-content: space-around;
-    display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    padding: 6px; 
+    border-radius: 1.25em;
+    padding: 0.5%; 
     position: fixed;
-    box-shadow: 8px 10px 15px black;
-    opacity: 0.2;
+    box-shadow: 0.5em 0.6em 0.93em black;
+    opacity: 0;
     transition: all 500ms ease-in-out;
-
 }
 
-.menu:hover {
-    margin-right: -75px;
-    opacity: 1;
-}
+/* #theme-toggle{
+    margin-right: 0.62em;
+} */
 
 .box svg {
-    width: 25px;
-    height: 25px;
+    width: 1,56rem;
+    height: 1,56rem;
     cursor: pointer;
     transition: all 500ms ease-in-out;
 }   
 
 .about-me {
-    padding: 50px 100px 50px 100px;
+    margin: 1.8% 9% 1.8% 9%;
     text-align: justify;
-    /* background-color: var(--branco); */
+    /* background-color: var(--preto); */
 }
 
 .about-me h1 {
-    font-size: 60px;
-    color: var(--laranja);
-    margin-bottom: 30px; 
+    font-size: 3.76em;
+    color: var(--roxo);
+    margin-bottom: 3.3%; 
     font-family: 'Poppins', sans-serif;
 }
 
 .about-me h2 {
-    font-size: 40px;
-    color: var(--laranja);
-    margin: 30px 0px;  
+    font-size: 2.52em;
+    color: var(--roxo);
+    margin: 3.3% 0%;  
     font-family: 'Poppins', sans-serif;
 }
 
+.about-me p {
+    font-size: 1em;
+}
+
 .my-projects {
-    padding: 10px 0px 50px 0px;
+    margin: 3% 0%;
 }
 
 .my-projects h2 {
-    font-size: 50px;
-    color: var(--laranja);
-    margin-bottom: 15px;
+    font-size: 3em;
+    color: var(--roxo);
+    margin-bottom: 1.2%;
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
 }
 
 .my-projects img {
-    width: 300px;
-    height: 300px;
+    width: 48vw;
+    height: 48vh;
 }
 
 .container {
-    border: 10px double rgb(48, 48, 48);
+    border: 0.62em double rgb(48, 48, 48);
     position: relative;
-    padding: 15px;
+    padding: 2%;
     margin: 0 auto;
-    max-width: 1280px;
-    max-height: 720px;
+    max-width: 80em;
+    max-height: 45em;
     background-color: #000;
 }
 
@@ -201,7 +214,7 @@ main {
 .gallery {
     display: flex;
     flex-flow: row nowrap;
-    gap: 15px;
+    gap: 1.6%;
 }
 
 .left,
@@ -211,14 +224,13 @@ main {
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 30px;
-    line-height: 250px;
+    font-size: 1.87em;
     text-align: left;
-    width: 150px;
+    width: 14%;
     /* color: #dadada; */
     cursor: pointer;
     border: none;
-    background: linear-gradient(to left, transparent 0%, purple 100%);
+    background: linear-gradient(to left, transparent 0%, var(--roxo) 100%);
     opacity: 0.3;
     transition: all 400ms ease-in-out;
 }
@@ -227,7 +239,7 @@ main {
     left: auto;
     right: 0;
     text-align: right;
-    background: linear-gradient(to right, transparent 0%, purple 200%); 
+    background: linear-gradient(to right, transparent 0%, var(--roxo) 100%); 
 }
 
 .left:hover,
@@ -236,11 +248,11 @@ main {
 }
 
 .item {
-    min-height: 480px;
-    min-width: 680px;
+    min-height: 75vh;
+    min-width: 45vw;
     flex-shrink: 0;
     opacity: 0.6;
-    border: 1px solid gray;
+    border: 0.06em solid gray;
     transition: all 400ms ease-in-out;
 }
 
@@ -258,24 +270,28 @@ main {
 }
 
 .contate-nos {
-    padding: 50px 40px;
+    margin: 1% 1.7%;
+    margin-bottom: 0%;
     font-family: 'Poppins', sans-serif;
 }
 
 .contate-nos h1 {
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 3em;
+    margin-bottom: 3.8%;
     /* color: #dadada; */
 }
 
+.contate-nos .inputs {
+    margin: 2.2% 0%;
+}
+
 .contate-nos input {
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px #ccc;
+    border-radius: 0.31em;
+    border: 0.06em solid #ccc;
+    box-shadow: 0 0 0.31em #ccc;
     color: #333;
-    font-size: 20px;
-    width: 700px;
+    font-size: 1.25em;
+    width: 43.75rem;
 }
 
 .inputs {
@@ -283,32 +299,38 @@ main {
 }
 
 form {
-    padding: 0px 80px;
+    font-size: 1em;
+    padding: 0em 5em;
 }
 
 #input-nome {
+    font-size: 1em;
     margin-left: auto;
     width: 70%;
 }
 
 #input-email {
+    font-size: 1em;
     width: 70%;
     margin-left: auto;
 }
 
 #input-Numero {
+    font-size: 1em;
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     margin-left: auto;
 }
 
 #input-Mensagem {
+    font-size: 1em;
+    margin-top: 0%;
     margin-left: auto;
-    height: 200px;
+    height: 12.5rem;
     width: 70%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 5px #ccc;
+    border-radius: 0.31em;
+    border: 0.06em solid #ccc;
+    box-shadow: 0 0 0.31em #ccc;
 }
 
 
@@ -318,13 +340,14 @@ form {
 }
 
 .midia {
-    margin-top: 50px;
+    margin-top: 3.12em;
     display: flex;
     justify-content: center;    
 }
 
-.midia img {
-    margin: 10px;
+.midia a {
+    margin: 0.5% 1.2%;
+    margin-bottom: 0em;
 }
 
 .a {
@@ -333,15 +356,61 @@ form {
 }
 
 .envio {
-    border-radius: 5px ;
+    border-radius: 0.31em ;
     background-color: rgb(121, 121, 121);
     color: #dadada;
     border: none ;
-    box-shadow: 6px 6px 10px rgb(105, 105, 105) ;
-    margin-top: 20px ;
+    box-shadow: 0,37em 0,37em 0.62em rgb(105, 105, 105) ;
+    margin-top: 1.25em ;
     width: fit-content;
-    padding: 3px 20px;
+    padding: 0.18em 1.25em;
 }
 
+}
 
+@media screen and (max-width: 912px) {
 
+body {
+    font-size: 8px;
+}
+
+section {
+    max-width: 100vh;
+    max-height: 100vh;
+}
+
+.imagem {
+margin-top: 30%;
+height: 20vh;
+}
+
+main {
+    height: fit-content;
+}
+
+.menu {
+    margin-top: 100%;
+    z-index: 10;
+    margin-right: 1%;
+}
+
+.seta {
+    margin-top: 100%;
+    margin-right: -12%;
+}
+
+.gallery img {
+    height: 100px;
+}
+
+.item   {
+    min-height: 25vh;
+    min-width: 45vw;
+}
+
+.midia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+} 

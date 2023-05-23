@@ -91,6 +91,30 @@ boxes.forEach((box) => {
     })
 })  
 
+//oculta menu
+
+const seta = document.querySelector('.seta')
+const menu = document.querySelector('.menu')
+
+let isClick = false
+
+seta.addEventListener('click', () => {
+    if (!isClick) {
+    menu.style.display = "flex"
+    setTimeout(() => {
+    menu.style.opacity = 1
+    }, 1)
+    isClick = true
+    } else {
+    menu.style.opacity = 0
+    setTimeout(() => {
+    menu.style.display = "none"
+    }, 500)
+    isClick = false
+    }
+
+});
+
 // Altera icone do menu com o Scroll
 
 window.addEventListener('scroll', () => {
@@ -166,12 +190,10 @@ botao.addEventListener('click', () => {
     objeto.numero = content[2].value
     objeto.mensagem = content[3].value
     
-    const destinatario = 'alexamenic@gmail.com';
+    const destinatario = 'alexamenic@gmail.com'
     const assunto = objeto.nome;
     const corpo = 'Email: ' + objeto.email + '\n' + 'Telefone: ' + objeto.numero + '\n' + 'Mensagem:' + objeto.mensagem;
   
     const link = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
-    console.log(botao.href);
     botao.href = link
-    console.log(botao.href);
 });
