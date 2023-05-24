@@ -12,6 +12,10 @@ html {
     font-size: 16px;
 }
 
+.dark {
+    fill: #fff;
+}
+
 body {
     background-image: url("./Asset/macigy_ilustration_picture_for_article_about_chatgpt_and_UI_7100ce80-86ca-446a-9080-58a8c94ae8f3.png");
     background-size: cover;
@@ -29,6 +33,7 @@ section {
     color: #000;
     background-color: #fff;
     margin: 0% 7.5%;
+    padding-bottom: 1%;
 }
 
 .fundo.dark-mode {
@@ -56,7 +61,7 @@ main {
     font-size: 3.7em;
     display: flex;
     font-family: 'Poppins', sans-serif;
-    /* color: #dadada; */
+     /* color: #dadada; */
 }
 
 .texto-grande h2 {
@@ -227,11 +232,11 @@ main {
     font-size: 1.87em;
     text-align: left;
     width: 14%;
-    /* color: #dadada; */
+    color: #fff;
     cursor: pointer;
     border: none;
     background: linear-gradient(to left, transparent 0%, var(--roxo) 100%);
-    opacity: 0.3;
+    opacity: 0.5;
     transition: all 400ms ease-in-out;
 }
 
@@ -249,7 +254,7 @@ main {
 
 .item {
     min-height: 75vh;
-    min-width: 45vw;
+    min-width: 35vw;
     flex-shrink: 0;
     opacity: 0.6;
     border: 0.06em solid gray;
@@ -278,7 +283,7 @@ main {
 .contate-nos h1 {
     font-size: 3em;
     margin-bottom: 3.8%;
-    /* color: #dadada; */
+    color: var(--roxo);
 }
 
 .contate-nos .inputs {
@@ -340,7 +345,7 @@ form {
 }
 
 .midia {
-    margin-top: 3.12em;
+    margin: 1.5em 0em;
     display: flex;
     justify-content: center;    
 }
@@ -366,26 +371,79 @@ form {
     padding: 0.18em 1.25em;
 }
 
+.dudateste {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.726);
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 912px) {
+.dudateste img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+}
+
+/*====================================================================*/
+
+@media screen and (max-width: 512px) {
 
 body {
-    font-size: 8px;
+    font-size: 15px;
 }
 
 section {
     max-width: 100vh;
     max-height: 100vh;
-}
-
-.imagem {
-margin-top: 30%;
-height: 20vh;
+    overflow-y: hidden;
 }
 
 main {
+    display: flex;
+    flex-direction: column-reverse;
     height: fit-content;
+}
+
+.imagem {
+    width: 100%;
+    height: 40vh;
+}
+
+.vazio {
+    height: 10px;
+    background-color: #000;
+}
+
+.texto {
+    width: 100%;
+}
+
+.texto-grande h1 {
+    margin-left: 5%;
+}
+
+.texto-grande h2 {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.texto-grande h5 {
+    margin-left: 5%;
+}
+
+.texto-menores p {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 7%;
+}
+
+.butao {
+    margin-left: 5%;
 }
 
 .menu {
@@ -399,18 +457,80 @@ main {
     margin-right: -12%;
 }
 
+.about-me h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 3.56em;
+    flex-wrap: nowrap;
+}
+
+.about-me h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .gallery img {
     height: 100px;
 }
 
 .item   {
-    min-height: 25vh;
-    min-width: 45vw;
+    min-height: 35vh;
+    min-width: 65vw;
+}
+
+.contate-nos {
+    margin: 0.5% 0%;
+    margin-bottom: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    padding: 0em 2em;
+}
+
+.contate-nos h1 {
+    margin-top: 15%;
+    font-size: 2.5em;
+} 
+
+.contate-nos .inputs {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.contate-nos label {
+    margin-bottom: 4%;
+}
+
+#input-nome {
+    font-size: 1em;
+    margin-left: auto;
+    width: 100%;
+}
+
+#input-email {
+    font-size: 1em;
+    width: 100%;
+    margin-left: auto;
+}
+
+#input-Numero {
+    width: 100%;
+    margin-bottom: 1.25em;
+    margin-left: auto;
+}
+
+#input-Mensagem {
+    margin-left: auto;
+    width: 100%;
 }
 
 .midia {
+    margin-left: 10%;
+    max-width: 80%;
     display: flex;
     flex-wrap: wrap;
 }
 
-} 
+}

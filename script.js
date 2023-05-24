@@ -91,6 +91,24 @@ boxes.forEach((box) => {
     })
 })  
 
+// seila
+
+const icone = document.querySelector('.dark svg')
+
+let isClick2 = false
+
+icone.addEventListener('click', () => {
+    if (!isClick2) {
+    icone.style.fill = '#dadada'
+    isClick2 = true
+    } else {
+    icone.style.fill = 'black'
+    isClick2 = false
+    }
+
+});
+
+
 //oculta menu
 
 const seta = document.querySelector('.seta')
@@ -115,11 +133,22 @@ seta.addEventListener('click', () => {
 
 });
 
+
 // Altera icone do menu com o Scroll
+
+
+let total = 0
+
+if (document.body.scrollHeight <= 2500) {
+    total = 1735
+} else {
+    total = 2100
+}
 
 window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || window.scrollY;
-  if(scrollTop >= 0  && scrollTop <= 385) {
+    
+  if(scrollTop >= 0  && scrollTop <= (total / 100) * 21.9) {
     boxes.forEach((box) => {
         box.style.fill = 'black';
         box.style.width = 25;
@@ -128,7 +157,9 @@ window.addEventListener('scroll', () => {
     boxes[0].style.fill = 'white';
     boxes[0].style.width = 20;
     boxes[0].style.height = 20;
-  } else if (scrollTop <= 1100) {
+
+  } else if (scrollTop <= (total / 100) * 52.86 ) {
+
     boxes.forEach((box) => {
         box.style.fill = 'black';
         box.style.width = 25;
@@ -137,7 +168,9 @@ window.addEventListener('scroll', () => {
     boxes[1].style.fill = 'white';
     boxes[1].style.width = 20;
     boxes[1].style.height = 20;
-  } else if (scrollTop <= 1845) {
+
+  } else if (scrollTop <= (total / 100) * 80.32 ) {
+
     boxes.forEach((box) => {
         box.style.fill = 'black';
         box.style.width = 25;
@@ -146,7 +179,9 @@ window.addEventListener('scroll', () => {
     boxes[2].style.fill = 'white';
     boxes[2].style.width = 20;
     boxes[2].style.height = 20;
-  } else if (scrollTop >= 1846) {
+
+  } else {
+
     boxes.forEach((box) => {
         box.style.fill = 'black';
         box.style.width = 25;
@@ -156,8 +191,8 @@ window.addEventListener('scroll', () => {
     boxes[3].style.width = 20;
     boxes[3].style.height = 20;
   }
-});
 
+});
 
 const content = document.querySelectorAll('.content')
 const botao = document.querySelector('.envio')
@@ -182,7 +217,6 @@ const objeto = {}
 
 // console.log(event)
 
-console.log(botao)
 
 botao.addEventListener('click', () => {
     objeto.nome = content[0].value
@@ -197,3 +231,18 @@ botao.addEventListener('click', () => {
     const link = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
     botao.href = link
 });
+
+const duda = document.querySelector('.dudateste')
+const dudaimg = document.querySelector('.dudateste img')
+
+item.forEach((item) => {
+item.addEventListener('click', () => {
+    duda.style.display = "flex"
+    dudaimg.src = item.src
+    console.log(2)
+})
+});
+
+duda.addEventListener('click', () => {
+    duda.style.display = 'none'
+})
