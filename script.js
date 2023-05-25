@@ -1,5 +1,5 @@
 const control = document.querySelectorAll('.control');
-let currentItem = 1
+let currentItem = 0
 const item = document.querySelectorAll('.item');
 const maxItem = item.length
 
@@ -56,10 +56,10 @@ control.forEach(control => {
 
         // item[(currentItem % maxItem + maxItem) % maxItem]
 
-        if (currentItem >= maxItem - 1) {
-            currentItem = 1
-        } else if (currentItem < 1) {
-            currentItem = maxItem - 2
+        if (currentItem >= maxItem) {
+            currentItem = 0
+        } else if (currentItem < 0) {
+            currentItem = maxItem - 1
         }
 
         item.forEach(item => item.classList.remove('current-item'))

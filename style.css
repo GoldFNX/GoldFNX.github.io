@@ -236,7 +236,7 @@ main {
     cursor: pointer;
     border: none;
     background: linear-gradient(to left, transparent 0%, var(--roxo) 100%);
-    opacity: 0.5;
+    opacity: 0.3;
     transition: all 400ms ease-in-out;
 }
 
@@ -473,7 +473,11 @@ main {
     height: 100px;
 }
 
-.item   {
+.container {
+    padding: 2% 6%;
+}
+
+.item  {
     min-height: 35vh;
     min-width: 65vw;
 }
