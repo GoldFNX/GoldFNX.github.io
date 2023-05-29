@@ -12,10 +12,6 @@ html {
     font-size: 16px;
 }
 
-.dark {
-    fill: #fff;
-}
-
 body {
     background-image: url("./Asset/macigy_ilustration_picture_for_article_about_chatgpt_and_UI_7100ce80-86ca-446a-9080-58a8c94ae8f3.png");
     background-size: cover;
@@ -30,20 +26,41 @@ section {
 }
 
 .fundo {
-    color: #000;
-    background-color: #fff;
     margin: 0% 7.5%;
     padding-bottom: 1%;
+
+    color: #000;
+    background-color: #fff;
 }
 
 .fundo.dark-mode {
+    margin: 0% 7.5%;
+
     color: #dadada;
     background-color: #222; 
-    margin: 0% 7.5%;
+}
+
+.dudateste {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+.dudateste img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 main {
     display: flex;
+
     height: 100vh;
 
 }
@@ -51,133 +68,159 @@ main {
 .texto {
     width: 50%;
     height: auto;
-    /* background-color: var(--preto); */
-  }  
-  
-.texto-grande h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 17%;
-    font-size: 3.7em;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-     /* color: #dadada; */
-}
+}  
 
 .texto-grande h2 {
     margin-top: 18%;
     margin-bottom: 0%;
     margin-left: 17%;
+
     font-size: 2.5em;
     font-family: 'Poppins', sans-serif;
-    /* color: #dadada; */
+}
+  
+.texto-grande h1 {
+    display: flex;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 17%;
+
+    font-size: 3.7em;
+    font-family: 'Poppins', sans-serif;
+
+     /* color: #dadada; */
 }
 
 .texto-grande h5 {
-    font-size: 0.83em;
     margin-top: 0%;
     margin-bottom: 2.6%;
     margin-left: 17%;
-    background-color: var(--roxo);
     padding-right: 2%;
     padding-left: 2%;
     padding-top: 1%;
     padding-bottom: 1%;
     width: fit-content;
+
+    font-size: 0.83em;
     font-family: 'Poppins', sans-serif;
+
+    background-color: var(--roxo);
 }
 
 .texto-grande p {
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: 3%;
+
     font-size: 1.04em;
     font-weight: bold;
-    color: var(--roxo);   
     font-family: 'Poppins', sans-serif;
+    
+    color: var(--roxo);   
 }
+
 .texto-menores p {
-    font-size: 1em;
     margin-left: 17%;
     margin-right: 7.2%;
+    
+    font-size: 1em;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
-    }
+}
 
 .butao {
+    border-radius: 2.06em;
+    border: none;
+
     margin: 2%;
     padding: 2% 4%;
     margin-left: 17%;
-    background-color: var(--roxo);
-    border-radius: 2.06em;
-    font-weight: Bold;
-    /* color: #dadada; */
-    border: none;
+
     font-family: 'Poppins', sans-serif;
+    font-weight: Bold;
+
+    background-color: var(--roxo);
+
     cursor: pointer;
 }
 
 .imagem {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
     width: 50%;
+
+    text-align: center;
+
     background-image: url("./Asset/WhatsApp\ Image\ 2023-02-14\ at\ 17.04.53.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: right;
 }
 
 .seta {
     position: fixed;
+
     margin-right: -8.6%;
 }
 
-
 .menu {
     display: none;
-    background-color: var(--roxo);
-    height: 50vh;
-    margin-right: -4.2%;
     justify-content: space-around;
     flex-direction: column;
-    border-radius: 1.25em;
-    padding: 0.5%; 
     position: fixed;
+
     box-shadow: 0.5em 0.6em 0.93em black;
+    border-radius: 1.25em;
+
+    height: 50vh;
+    margin-right: -4.2%;
+    padding: 0.5%; 
+
+    background-color: var(--roxo);
+
     opacity: 0;
     transition: all 500ms ease-in-out;
 }
 
-/* #theme-toggle{
-    margin-right: 0.62em;
-} */
-
 .box svg {
     width: 1,56rem;
     height: 1,56rem;
-    cursor: pointer;
+
     transition: all 500ms ease-in-out;
-}   
+    cursor: pointer;
+}  
+
+.dark {
+    fill: #fff;
+}
 
 .about-me {
     margin: 1.8% 9% 1.8% 9%;
+
     text-align: justify;
+
     /* background-color: var(--preto); */
 }
 
 .about-me h1 {
     font-size: 3.76em;
-    color: var(--roxo);
+
     margin-bottom: 3.3%; 
+
     font-family: 'Poppins', sans-serif;
+
+    color: var(--roxo);
 }
 
 .about-me h2 {
-    font-size: 2.52em;
-    color: var(--roxo);
     margin: 3.3% 0%;  
+
+    font-size: 2.52em;
     font-family: 'Poppins', sans-serif;
+
+    color: var(--roxo);
 }
 
 .about-me p {
@@ -188,38 +231,41 @@ main {
     margin: 3% 0%;
 }
 
-.my-projects h2 {
-    font-size: 3em;
-    color: var(--roxo);
-    margin-bottom: 1.2%;
+.my-projects h2 {    
     display: flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-}
 
-.my-projects img {
-    width: 48vw;
-    height: 48vh;
+    margin-bottom: 1.2%;
+
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--roxo);
 }
 
 .container {
-    border: 0.62em double rgb(48, 48, 48);
     position: relative;
+
+    border: 0.62em double rgb(48, 48, 48);
+
     padding: 2%;
     margin: 0 auto;
     max-width: 80em;
     max-height: 45em;
-    background-color: #000;
-}
 
-.gallery-wrapper {
-    overflow-x: auto;
+    background-color: #000;
 }
 
 .gallery {
     display: flex;
     flex-flow: row nowrap;
     gap: 1.6%;
+}
+
+.gallery-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .left,
@@ -229,13 +275,18 @@ main {
     left: 0;
     right: auto;
     bottom: 0;
+
+    border: none;
+
+    width: 14%;
+
     font-size: 1.87em;
     text-align: left;
-    width: 14%;
+
     color: #fff;
-    cursor: pointer;
-    border: none;
     background: linear-gradient(to left, transparent 0%, var(--roxo) 100%);
+
+    cursor: pointer;
     opacity: 0.3;
     transition: all 400ms ease-in-out;
 }
@@ -243,7 +294,9 @@ main {
 .right {
     left: auto;
     right: 0;
+
     text-align: right;
+
     background: linear-gradient(to right, transparent 0%, var(--roxo) 100%); 
 }
 
@@ -252,12 +305,20 @@ main {
     opacity: 1;
 }
 
+.my-projects img {
+    width: 48vw;
+    height: 48vh;
+}
+
 .item {
+    flex-shrink: 0;
+
+    border: 0.06em solid gray;
+
     min-height: 75vh;
     min-width: 35vw;
-    flex-shrink: 0;
+
     opacity: 0.6;
-    border: 0.06em solid gray;
     transition: all 400ms ease-in-out;
 }
 
@@ -269,14 +330,10 @@ main {
     display: none;
 }
 
-.gallery-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 .contate-nos {
     margin: 1% 1.7%;
     margin-bottom: 0%;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -286,73 +343,69 @@ main {
     color: var(--roxo);
 }
 
-.contate-nos .inputs {
+form {
+    padding: 0em 5em;
+
+    font-size: 1em;
+}
+
+.inputs {
+    display: flex;
+
     margin: 2.2% 0%;
+
 }
 
 .contate-nos input {
     border-radius: 0.31em;
     border: 0.06em solid #ccc;
     box-shadow: 0 0 0.31em #ccc;
-    color: #333;
-    font-size: 1.25em;
+
     width: 43.75rem;
-}
 
-.inputs {
-    display: flex;
-}
+    font-size: 1.25em;
 
-form {
-    font-size: 1em;
-    padding: 0em 5em;
+    color: #333;
 }
-
-#input-nome {
-    font-size: 1em;
-    margin-left: auto;
-    width: 70%;
-}
-
-#input-email {
-    font-size: 1em;
-    width: 70%;
-    margin-left: auto;
-}
-
-#input-Numero {
-    font-size: 1em;
-    width: 70%;
-    margin-bottom: 1.25em;
-    margin-left: auto;
-}
-
-#input-Mensagem {
-    font-size: 1em;
-    margin-top: 0%;
-    margin-left: auto;
-    height: 12.5rem;
-    width: 70%;
-    border-radius: 0.31em;
-    border: 0.06em solid #ccc;
-    box-shadow: 0 0 0.31em #ccc;
-}
-
 
 .Mensagem {
     display: flex;
     align-items: center;
 }
 
-.midia {
-    margin: 1.5em 0em;
-    display: flex;
-    justify-content: center;    
+#input-nome {
+    margin-left: auto;
+    width: 70%;
+
+    font-size: 1em;
 }
 
-.midia a {
-    margin: 0.5% 1.2%;
-    margin-bottom: 0em;
+#input-email {
+    width: 70%;
+    margin-left: auto;
+
+    font-size: 1em;
+}
+
+#input-Numero {
+    width: 70%;
+    margin-bottom: 1.25em;
+    margin-left: auto;
+
+    font-size: 1em;
+}
+
+#input-Mensagem {
+    border-radius: 0.31em;
+    border: 0.06em solid #ccc;
+    box-shadow: 0 0 0.31em #ccc;
+
+    margin-top: 0%;
+    margin-left: auto;
+    height: 12.5rem;
+    width: 70%;
+
+    font-size: 1em;
 }
 
 .a {
@@ -362,29 +415,28 @@ form {
 
 .envio {
     border-radius: 0.31em ;
-    background-color: rgb(121, 121, 121);
-    color: #dadada;
     border: none ;
-    box-shadow: 0,37em 0,37em 0.62em rgb(105, 105, 105) ;
+
     margin-top: 1.25em ;
-    width: fit-content;
     padding: 0.18em 1.25em;
+    width: fit-content;
+
+    background-color: rgb(121, 121, 121);
+    box-shadow: 0,37em 0,37em 0.62em rgb(105, 105, 105) ;
+    color: #dadada;
 }
 
-.dudateste {
-    display: none;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.726);
-    position: fixed;
-    z-index: 10;
-    justify-content: center;
-    align-items: center;
+
+.midia {
+    display: flex;
+    justify-content: center;   
+
+    margin: 1.5em 0em;
 }
 
-.dudateste img {
-    max-width: 90%;
-    max-height: 90%;
+.midia a {
+    margin: 0.5% 1.2%;
+    margin-bottom: 0em;
 }
 
 }
@@ -400,12 +452,14 @@ body {
 section {
     max-width: 100vh;
     max-height: 100vh;
+
     overflow-y: hidden;
 }
 
 main {
     display: flex;
     flex-direction: column-reverse;
+
     height: fit-content;
 }
 
@@ -416,6 +470,7 @@ main {
 
 .vazio {
     height: 10px;
+
     background-color: #000;
 }
 
@@ -423,12 +478,12 @@ main {
     width: 100%;
 }
 
-.texto-grande h1 {
+.texto-grande h2 {
+    margin-top: 10%;
     margin-left: 5%;
 }
 
-.texto-grande h2 {
-    margin-top: 10%;
+.texto-grande h1 {
     margin-left: 5%;
 }
 
@@ -446,31 +501,30 @@ main {
     margin-left: 5%;
 }
 
-.menu {
-    margin-top: 100%;
-    z-index: 10;
-    margin-right: 1%;
-}
-
 .seta {
     margin-top: 100%;
     margin-right: -12%;
 }
 
+.menu {
+    z-index: 10;
+
+    margin-top: 100%;
+    margin-right: 1%;
+}
+
 .about-me h1 {
+    flex-wrap: nowrap;
+
     margin-top: 10%;
     margin-bottom: 10%;
+
     font-size: 3.56em;
-    flex-wrap: nowrap;
 }
 
 .about-me h2 {
     margin-top: 10%;
     margin-bottom: 10%;
-}
-
-.gallery img {
-    height: 100px;
 }
 
 .container {
@@ -485,6 +539,7 @@ main {
 .contate-nos {
     margin: 0.5% 0%;
     margin-bottom: 0%;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -494,13 +549,15 @@ form {
 
 .contate-nos h1 {
     margin-top: 15%;
+
     font-size: 2.5em;
 } 
 
-.contate-nos .inputs {
+.inputs {
     display: flex;
-    max-width: 100%;
     flex-wrap: wrap;
+
+    max-width: 100%;
 }
 
 .contate-nos label {
@@ -508,33 +565,36 @@ form {
 }
 
 #input-nome {
-    font-size: 1em;
-    margin-left: auto;
     width: 100%;
+    margin-left: auto;
+
+    font-size: 1em;
 }
 
 #input-email {
-    font-size: 1em;
     width: 100%;
     margin-left: auto;
+
+    font-size: 1em;
 }
 
 #input-Numero {
     width: 100%;
-    margin-bottom: 1.25em;
     margin-left: auto;
+    margin-bottom: 1.25em;
 }
 
 #input-Mensagem {
-    margin-left: auto;
     width: 100%;
+    margin-left: auto;
 }
 
 .midia {
-    margin-left: 10%;
-    max-width: 80%;
     display: flex;
     flex-wrap: wrap;
+
+    margin-left: 10%;
+    max-width: 80%;
 }
 
 }
